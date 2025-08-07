@@ -36,6 +36,7 @@ Autor: Marco Tulio Valente
 >- Proteger a informação, encapuslar.
 
 ### O que é coesão?
+>- Faz uma coisa bem feita 
 >- Caracteristica que buscamos na escrita dos códigos
 >- Toda classe precisa ter uma funcionalidade.
 >- Temos que ter o bom senso ao definir o que é coesão
@@ -53,6 +54,27 @@ Autor: Marco Tulio Valente
 ## Maximize a coesão das classes e minimize o acoplamento entre elas.
 > Escreva classes que cada uma faz uma coisa bem feita e impeça que elas tenham conexões diretas umas com os outros.
 
+## Aula 07/08- Resumo livro: Engenharia de Software Moderna - Cap 5.6
+### SOLID 
+>- Solid, na verdade, ele é um acrônimo certo, então cada letrinha desse solid significa um dos 5 princípios que ele resume.
+>- Programar orientado ou objetos do jeito certo.
 
+### Principio da responsabilidade unica- SINGLE RESPONSIBILITY PRINCIPLE
+>- Esse princípio é uma aplicação direta da ideia de coesão.
+>- É muito importante que cada um tenha seu papel definido 
 
+### Princípio da segregação de interfaces
+>- Cada coisa tem suas interfaces
+>- Cada uma tem um responsabilidade única 
 
+### Arquitetura dos arquivos java- Orientados a objetos
+>-   Entity- Dados
+>-   Repository- JPA spring data
+>-   Services- Lógica (Use cases)
+>-   Controller- Api rest
+>-   Padronização- Interfaces 
+
+### Principais tipos de setas 
+>- Seta herança- linha cheia, seta vazada
+>- Seta de interface/ implementação- linha tracjada, seta vazada
+>- Seta da associação- Variável- linha cheia, seta cheia
