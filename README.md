@@ -78,3 +78,25 @@ Autor: Marco Tulio Valente
 >- Seta herança- linha cheia, seta vazada
 >- Seta de interface/ implementação- linha tracjada, seta vazada
 >- Seta da associação- Variável- linha cheia, seta cheia
+
+## Aula 11/08- Resumo livro: Engenharia de Software Moderna - Cap 5.6.3
+### Princípio de inversão de dependências
+>-  Uma classe precisa de controladores- que são as interfaces de serviço
+>-  O princípio da inversão da dependência é, eu não dependo direto de alguém. Eu dependo de uma interface, certo? Mas alguém precisa colocar o cara lá. Quem faz isso para nós no Spring é o autowired.
+>-  Uma classe cliente deve estabelecer dependências prioritariamente com abstrações e não com implementações concretas
+
+### Prefira composição a Herança
+>- A herança faz com que tudo do pai, vai para o filho, violado o encapsulamento das classes pai.- limitante
+>-  Associação é a maneira mais segura de criar relações.
+>-  Quando usar a herança-> quando os filhos de uma super classe não tiverem relação entre eles, e um virá o outro. O outro virá um certo. Aí você usa herança.
+
+### Principio de Demeter
+>-  Defende que a implementação de um método deve invocar apenas os seguintes outros métodos:
+>-  de sua própria classe (caso 1)
+>-  de objetos passados como parâmetros (caso 2)
+>-  de objetos criados pelo próprio método (caso 3)
+>-  de atributos da classe do método (caso 4)
+>-  É um código sem ter ou chamar um monte de aclopamento
+
+### Padrão aberto/fechado
+>-  Uma classe deve estar fechada para modificações e aberta para extensões.
