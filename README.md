@@ -100,3 +100,9 @@ Autor: Marco Tulio Valente
 
 ### Padrão aberto/fechado
 >-  Uma classe deve estar fechada para modificações e aberta para extensões.
+
+## Aula 18/08- Resumo livro: Engenharia de Software Moderna - Cap 5.6.7
+>- O Princípio de Substituição de Liskov explicita regras para redefinição de métodos de classes base em classes filhas.
+
+### Padrões de projetos 
+>- Singleton- algo unico no código 
