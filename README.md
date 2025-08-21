@@ -100,3 +100,6 @@ Autor: Marco Tulio Valente
 
 ### Padrão aberto/fechado
 >-  Uma classe deve estar fechada para modificações e aberta para extensões.
+
+## Aula 21/08- Desing patterns
+- Singleton- 
