@@ -103,3 +103,40 @@ Autor: Marco Tulio Valente
 
 ## Aula 21/08- Desing patterns
 - Singleton- 
+
+
+## Aula 21/08- Desing patterns
+- A flecha tracejada - significa herança 
+
+## Aula 28/08- Modulo de fundamentos 
+Caracteristicas da arquitetura = requisitos não funcionais
+>- Ou seja tudo que tenha haver com as funções gerais de um sistema.
+>- Como e o que um software precisa para operar.
+>- Suplly chain software- A dependencia que as empresas de software livres- Cobernits
+>- trade off- A caracteristica mais buscada pelos engenheiros de softwares em suas aplicações é a SEGURANÇA
+
+Decisões arquiteturais
+>- Escolhemos com qual arquitetura vamos usar.
+
+Principios de Design
+>- A partir da escolha de arquitura exemplo como por camadas, o usamos microsserviços buscamos um baixo acoplamento.
+>- Regras básica para seguir e contruir a arquitetura
+
+## Aula 01/09- Expectativa de um arquiteto
+>- Analisar constantemente a arquitetura
+>- Atualizar-se com as tendências
+>- Instruir a equipe, experiência e exposição diversificada 
+>- Noção de negócios
+>- Analisar continuamente a arquitetura
+
+DevOps
+>- Planejar 
+>- Programar
+>- Integra
+>- Opera
+>- Publicar o código em um lugar central, tendo ferramentas para a integração continua
+>- Testar, validar -> Impantar, publicar para o cliente final
+>- Monitorar ambiente
+>- Feedback do código com o usuário final
+>- Sistema de controle de versão
+Analise estática de código
