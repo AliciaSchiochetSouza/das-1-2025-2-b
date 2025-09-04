@@ -139,4 +139,30 @@ DevOps
 >- Monitorar ambiente
 >- Feedback do código com o usuário final
 >- Sistema de controle de versão
-Analise estática de código
+>- Analise estática de código
+
+## Aula 04/09- Pensamento arquitetônico
+>- Requisitos funcionais tem os não funcionais e as as características da arquitetura são esses requisitos.
+>- Esses são os 3 pontos, então, requisitos não funcionais, que é característica, arquitetura que eu vou usar e regras básicas que eu tenho que seguir para eu não estragar a minha arquitetura.
+
+### Arquitetura vs design
+
+> - O arquiteto é responsável por analisar requisitos comerciais para assim definir as características da arquitetura.
+> - Identificando os atributos, selecionando os padrões e estilos tendo o domínio do problema. 
+>- Criando componentes e soluções. 
+>-Por conseguinte com a feitura dos artefatos são passados para a equipe de desenvolvimento. 
+>-Responsáveis por criarem os diagramas e demais componentes essas atividades constituem o design. 
+
+### Formação no modelo T
+- Amplitude técnica: O escopo de detalhes técnicos difere entre os desenvolvedores e arquitetos.
+O desenvolvedor que deve ter profundidade técnica para realizar o trabalho.
+O arquiteto deve ter uma grande amplitude técnica, para que tenha um ponto de vista da arquitetura.
+A pirâmide representando todo o conhecimento. Dividida em 3 seções: O que você sabe? O que não sabe? O que não sabe que não sabe?
+Para um arquiteto uma grande parte de seu valor é o amplo conhecimento da tecnologia e como usá-la para resolver problemas específicos.
+As partes mais importantes da pirâmide para os arquitetos são o topo e o meio a amplitude técnica de um arquiteto é vista na parte central da pirâmide.
+> - Amplitude mais importante que a profundidade
+> - Manter-se atualizado em especializações em várias áreas
+> - Tudo na arquitetura é um trade-off- Depende
+> - Uma vantagem é a extensibilidade arquitetural e o desacoplamento do serviço. Entretanto o acesso a dados e preocupações com os mesmo.
+
+
