@@ -101,8 +101,66 @@ Autor: Marco Tulio Valente
 ### Padrão aberto/fechado
 >-  Uma classe deve estar fechada para modificações e aberta para extensões.
 
-## Aula 18/08- Resumo livro: Engenharia de Software Moderna - Cap 5.6.7
->- O Princípio de Substituição de Liskov explicita regras para redefinição de métodos de classes base em classes filhas.
+## Aula 21/08- Desing patterns
+- Singleton- 
 
-### Padrões de projetos 
->- Singleton- algo unico no código 
+
+## Aula 21/08- Desing patterns
+- A flecha tracejada - significa herança 
+
+## Aula 28/08- Modulo de fundamentos 
+Caracteristicas da arquitetura = requisitos não funcionais
+>- Ou seja tudo que tenha haver com as funções gerais de um sistema.
+>- Como e o que um software precisa para operar.
+>- Suplly chain software- A dependencia que as empresas de software livres- Cobernits
+>- trade off- A caracteristica mais buscada pelos engenheiros de softwares em suas aplicações é a SEGURANÇA
+
+Decisões arquiteturais
+>- Escolhemos com qual arquitetura vamos usar.
+
+Principios de Design
+>- A partir da escolha de arquitura exemplo como por camadas, o usamos microsserviços buscamos um baixo acoplamento.
+>- Regras básica para seguir e contruir a arquitetura
+
+## Aula 01/09- Expectativa de um arquiteto
+>- Analisar constantemente a arquitetura
+>- Atualizar-se com as tendências
+>- Instruir a equipe, experiência e exposição diversificada 
+>- Noção de negócios
+>- Analisar continuamente a arquitetura
+
+DevOps
+>- Planejar 
+>- Programar
+>- Integra
+>- Opera
+>- Publicar o código em um lugar central, tendo ferramentas para a integração continua
+>- Testar, validar -> Impantar, publicar para o cliente final
+>- Monitorar ambiente
+>- Feedback do código com o usuário final
+>- Sistema de controle de versão
+>- Analise estática de código
+
+## Aula 04/09- Pensamento arquitetônico
+>- Requisitos funcionais tem os não funcionais e as as características da arquitetura são esses requisitos.
+>- Esses são os 3 pontos, então, requisitos não funcionais, que é característica, arquitetura que eu vou usar e regras básicas que eu tenho que seguir para eu não estragar a minha arquitetura.
+
+### Arquitetura vs design
+
+> - O arquiteto é responsável por analisar requisitos comerciais para assim definir as características da arquitetura.
+> - Identificando os atributos, selecionando os padrões e estilos tendo o domínio do problema. 
+>- Criando componentes e soluções. 
+>-Por conseguinte com a feitura dos artefatos são passados para a equipe de desenvolvimento. 
+>-Responsáveis por criarem os diagramas e demais componentes essas atividades constituem o design. 
+
+### Formação no modelo T
+- Amplitude técnica: O escopo de detalhes técnicos difere entre os desenvolvedores e arquitetos.
+O desenvolvedor que deve ter profundidade técnica para realizar o trabalho.
+O arquiteto deve ter uma grande amplitude técnica, para que tenha um ponto de vista da arquitetura.
+A pirâmide representando todo o conhecimento. Dividida em 3 seções: O que você sabe? O que não sabe? O que não sabe que não sabe?
+Para um arquiteto uma grande parte de seu valor é o amplo conhecimento da tecnologia e como usá-la para resolver problemas específicos.
+As partes mais importantes da pirâmide para os arquitetos são o topo e o meio a amplitude técnica de um arquiteto é vista na parte central da pirâmide.
+> - Amplitude mais importante que a profundidade
+> - Manter-se atualizado em especializações em várias áreas
+> - Tudo na arquitetura é um trade-off- Depende
+> - Uma vantagem é a extensibilidade arquitetural e o desacoplamento do serviço. Entretanto o acesso a dados e preocupações com os mesmo.
