@@ -164,3 +164,31 @@ As partes mais importantes da pirâmide para os arquitetos são o topo e o meio 
 > - Manter-se atualizado em especializações em várias áreas
 > - Tudo na arquitetura é um trade-off- Depende
 > - Uma vantagem é a extensibilidade arquitetural e o desacoplamento do serviço. Entretanto o acesso a dados e preocupações com os mesmo.
+
+## Aula 08/09- Pensamento arquitetônico- Trade-off compensação
+>- Em um sistema de leilão com muitiplos itens, abrimos mão da simpliciadade do sistema para ganhar escola em performance.
+>- No subscriber tem pedir- pooling buscar a mensagem. 1-n -GRUPO WHATSAPP- + mais impacto
+>- observer- Mecanismo de tópicos. Broker apache kafka exemplo de um tópico.
+>- Fila, alguem coloca a mensagem na fila e quem tem interesse vai lá buscar a mensagem na fila. Ele busca e depois processa a mensagem.
+>- Mantem a ordem no armazenamento.Tem uma fila para cada instância. 1-1 CARTÃO NATAL- Sender - receivers extensabilidade arqitetural -menos impacto
+>- Se o teu sistema pode usar a mesma mensagem pra todos os serviços, o tópico é mais indicado. mas se você precisa de mensagens específicas, a fila seja mais indicada.
+>- Diferenças: 
+>- Tópico-
+Publicador-Subscriber (1 para muitos).
+-Mensagem é enviada para todos os inscritos (subscribers).
+-Subscribers fazem pooling ou recebem via observer.
+-Alta escalabilidade, mais impacto.
+-Pode manter ordem por partição.
+- Desacoplamento
+>- Fila-
+-Produtor-Consumidor (1 para 1).
+-Mensagem é consumida por apenas um consumidor.
+-Consumidor busca a mensagem diretamente na fila.
+-Cartão de Natal: cada um recebe o seu, individualmente.
+-Extensibilidade arquitetural, menos impacto, mais controle.
+-Mantém ordem por fila, uma fila por instância
+- Visibilidade isolada..
+>- Se juntarmos a fila com o tópico, temos o armazenamento buffer. Diminuimos o acomplamento. Mas aumentamos os custos.
+>- Separação temporal dos processos.
+
+ 
