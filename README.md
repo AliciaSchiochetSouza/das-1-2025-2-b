@@ -255,4 +255,43 @@ Adequação funcional:
 Trade-offs  arquitetura menos pior
 - Numa mire na melhor arquitetura, mas na arquitetura menos pior.
 
+## Aula livro engenharia: Cap 4- 09/10
+- Circuit breaker
+O que é o padrão do disjuntor
+>- Ajuda a lidar com falhas que podem levar períodos variados para serem recuperadas quando um aplicativo se conecta a um serviço ou recurso remoto.
+
+- Padrão que protege sistemas de falhas repetidas em serviços externos, evitando sobrecarga e falhas em cascata.  
+
+### Problema
+- Chamadas a serviços remotos podem falhar por indisponibilidade ou lentidão.  
+- Tentar repetidamente consome recursos e pode travar o sistema.  
+
+### Solução
+- Usa três estados principais:  
+  - **Fechado**: chamadas normais, contabiliza falhas.  
+  - **Aberto**: falha imediata, sem tentar por um tempo.  
+  - **Meio-aberto**: algumas tentativas de teste; se der certo, volta ao normal.  
+
+### Benefícios
+- Evita falhas em cascata.  
+- Reduz tempo de espera (falha rápida).  
+- Dá tempo para recuperação do serviço.  
+- Facilita monitoramento da saúde do sistema.  
+
+### Cuidados
+- Ajustar limites de falha e tempo de espera.  
+- Oferecer respostas alternativas (cache, valor padrão).  
+- Monitorar abertura e fechamento do disjuntor.  
+- Usar versões adaptativas quando possível.  
+
+### Quando usar
+- Dependência de serviços externos instáveis.  
+- Cenários de alta demanda ou risco de sobrecarga.  
+- Necessidade de estabilidade em ambientes distribuídos.  
+
+### Quando não usar
+- Recursos locais, sem dependência remota.  
+- Quando o Retry simples já resolve.  
+- Em arquiteturas baseadas em filas.  
+
 
