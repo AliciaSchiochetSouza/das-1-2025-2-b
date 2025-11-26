@@ -294,4 +294,26 @@ O que é o padrão do disjuntor
 - Quando o Retry simples já resolve.  
 - Em arquiteturas baseadas em filas.  
 
+## Aula: 16/10- Retry pattern
 
+### Retry pattern- evita a aceleração
+
+- Tentar e desistir
+- Retry after delay- Espaçar as tentativas:
+- Ele vai parar de tentar, mas o mais importante não é esse momento. O mais importante é o espaçar as tentativas para dar tempo do outro serviço se recuperar.
+
+  A grande bola de lama
+  - arquitetura de unitária- software de microndas
+  - Clintes servidor- desktop servidor- servidor no meio e clientes na ponta- ERPS da TOTVS
+  - Modelo we- O servidor Web se conecta no banco- criação de dependencias
+  - Existe uma mistura de modelas-
+ 
+  - Sistemas dividios em camadas- Corba- Broeker- No azure service Bus
+  - Uma linguagem intermediaria que adaptava outras linguagens de programação, foi a primeira vez que eles pensaram nisso.
+  - Netflix- api rest json- GRPC
+ 
+  - Sistemas precisam evoluir
+  - MONOLITO: Acoplamento  Vamos lá, é um sistema aonde todas as funcionalidades estão no mesmo.
+  - Dapper. Ele é um run time pra te ajudar a construir aplicações em micro serviços- Side car
+  - Sem acoplamenro com o sistemas de nuvem- Abstração
+  - O dapper suporta transações distribuídas
