@@ -345,7 +345,7 @@ Classificações das Características da Arquitetura:
 - Taxas de implementabilidade e testabilidade são muito baixas para esse estilo de arquitetura.
 - Desempenho é sempre uma característica interessante para classificar a arquitetura em camadas.
 
-##Aula livro engenharia: Cap 11-27/10- Estilo de Arquitetura em Pipeline
+## Aula livro engenharia: Cap 11-27/10- Estilo de Arquitetura em Pipeline
 
 Estilo de Arquitetura Pipeline:
 - Conjunto de programas- Entrada e saída- Modulos super especialistas
@@ -375,8 +375,9 @@ Consumidor:
 
 Arrastando componentes e criando a sua lógica- Pipe
 Node-RED
-- Inject- Topic- Alícia- injetar a cada 1 seg, intervalo 1 seg. - Coneexão de debug
+- Inject- Topic- Alícia- injetar a cada 1 seg, intervalo 1 seg. - Conexão com o debug
 - Debug- Criação de um evento
 - Recebe uma mensagem passa essa mensagem
 
-Integrações
+## Aula: 30/10- Código Kafka
+- Código- Kafka um paint no Azure
