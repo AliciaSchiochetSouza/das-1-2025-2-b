@@ -317,3 +317,30 @@ O que é o padrão do disjuntor
   - Dapper. Ele é um run time pra te ajudar a construir aplicações em micro serviços- Side car
   - Sem acoplamenro com o sistemas de nuvem- Abstração
   - O dapper suporta transações distribuídas
+
+## Aula livro engenharia: Cap 10- 20/10- Estilo de arquitetura em camadas
+
+O que é:
+- é um dos estilos mais comuns. Ele é o padrão de fato da maioria das aplicações, basicamente por sua simplicidade, familiaridade e baixo custo.
+
+Topologia:
+- são organizados em camadas horizontais lógicas, com cada camada tendo uma função específica dentro da aplicação (como lógica de apresentação ou lógica de negócio).
+- Cada camada do estilo da arquitetura em camadas tem uma função e responsabilidade específicas dentro da arquitetura.
+- Os componentes em uma camada específica estão limitados em escopo, lidando apenas com a lógica que pertence a essa camada.
+- Contudo o trade-off desse benefício é uma falta de agilidade geral (a capacidade de responder rápido à mudança).
+
+Camadas de Isolamento:
+- Camadas pode ser fechada ou aberta.
+- Uma camada fechada significa que, conforme uma requisição desce de camada em camada, ela não pode pular nenhuma, mas pode passar pela camada imediatamente abaixo dela para chegar na próxima.
+  
+Adicionando Camadas:
+- Um modo de designar arquiteturalmente essa restrição é adicionar à arquitetura uma nova camada de serviços contendo todos os objetos de negócio compartilhados.
+- Utilizar o conceito de camadas abertas e fechadas ajuda a definir a relação entre as camadas da arquitetura e os fluxos da requisição.
+
+Por que Usar Esse Estilo de Arquitetura?
+- Arquitetura em camadas é uma boa escolha para aplicações ou sites pequenos e simples.
+
+Classificações das Características da Arquitetura:
+- Custo geral e a simplicidade são os pontos fortes básicos do estilo da arquitetura em camadas.
+- Taxas de implementabilidade e testabilidade são muito baixas para esse estilo de arquitetura.
+- Desempenho é sempre uma característica interessante para classificar a arquitetura em camadas.
