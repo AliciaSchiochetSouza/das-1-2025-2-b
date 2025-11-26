@@ -344,3 +344,39 @@ Classificações das Características da Arquitetura:
 - Custo geral e a simplicidade são os pontos fortes básicos do estilo da arquitetura em camadas.
 - Taxas de implementabilidade e testabilidade são muito baixas para esse estilo de arquitetura.
 - Desempenho é sempre uma característica interessante para classificar a arquitetura em camadas.
+
+##Aula livro engenharia: Cap 11-27/10- Estilo de Arquitetura em Pipeline
+
+Estilo de Arquitetura Pipeline:
+- Conjunto de programas- Entrada e saída- Modulos super especialistas
+- Modulo filtro- tarefas especificas- canos= modulos prontos para fazer o processamento
+- Input= entrada padrão dos dados
+- Print= escreve na saída
+- Um programa produz a informação para o proximo programa.
+- Sistema bancário do Brasil é assim. São entradas e saídas padrões
+
+Canal:
+- liga em programa ao outro
+  
+Filtros:
+- componentes
+  
+Produtor:
+- O ponto de partida de um processo, de saída apenas, às vezes chamado de origem.
+  
+Transformador:
+- Aceita a entrada, realiza opcionalmente uma transformação em algum ou todos os dados, então encaminha para o canal de saída. Os defensores funcionais reconhecerão esse recurso como mapa.
+  
+Verficador:
+- Aceita a entrada, testa um ou mais critérios, então produz opcionalmente uma saída, com base no teste. Os programadores funcionais reconhecerão isso como semelhante à redução.
+  
+Consumidor:
+- vai usar a informação
+
+Arrastando componentes e criando a sua lógica- Pipe
+Node-RED
+- Inject- Topic- Alícia- injetar a cada 1 seg, intervalo 1 seg. - Coneexão de debug
+- Debug- Criação de um evento
+- Recebe uma mensagem passa essa mensagem
+
+Integrações
