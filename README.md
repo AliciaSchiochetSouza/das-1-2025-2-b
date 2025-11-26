@@ -321,7 +321,7 @@ O que é o padrão do disjuntor
 ## Aula livro engenharia: Cap 10- 20/10- Estilo de arquitetura em camadas
 
 O que é:
-- é um dos estilos mais comuns. Ele é o padrão de fato da maioria das aplicações, basicamente por sua simplicidade, familiaridade e baixo custo.
+- É um dos estilos mais comuns. Ele é o padrão de fato da maioria das aplicações, basicamente por sua simplicidade, familiaridade e baixo custo.
 
 Topologia:
 - são organizados em camadas horizontais lógicas, com cada camada tendo uma função específica dentro da aplicação (como lógica de apresentação ou lógica de negócio).
@@ -356,10 +356,10 @@ Estilo de Arquitetura Pipeline:
 - Sistema bancário do Brasil é assim. São entradas e saídas padrões
 
 Canal:
-- liga em programa ao outro
+- Liga em programa ao outro
   
 Filtros:
-- componentes
+- Componentes
   
 Produtor:
 - O ponto de partida de um processo, de saída apenas, às vezes chamado de origem.
@@ -371,7 +371,7 @@ Verficador:
 - Aceita a entrada, testa um ou mais critérios, então produz opcionalmente uma saída, com base no teste. Os programadores funcionais reconhecerão isso como semelhante à redução.
   
 Consumidor:
-- vai usar a informação
+- Vai usar a informação
 
 Arrastando componentes e criando a sua lógica- Pipe
 Node-RED
@@ -385,20 +385,20 @@ Node-RED
 ## Aula livro engenharia: Cap 12- 03/11- Estilo de Arquitetura Microkernel
 
 O que é:
-- estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica.
+- Estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica.
 
 Topologia:
-- estrutura monolítica relativamente simples consistindo em dois componentes da arquitetura: um sistema central e componentes de plug-in.
+- Estrutura monolítica relativamente simples consistindo em dois componentes da arquitetura: um sistema central e componentes de plug-in.
 - A lógica do aplicativo é dividida entre componentes de plug-in independentes e o sistema central básico, fornecendo extensão, adaptação e isolamento dos recursos da aplicação e lógica de processamento personalizada.
 
 Sistema Central:
-- funcionalidade mínima requerida para rodar o sistema.
-- aplicação monolítica inteiro compartilhe um único banco de dados.
+- Funcionalidade mínima requerida para rodar o sistema.
+- Aplicação monolítica inteiro compartilhe um único banco de dados.
 
 Componentes de Plug-in:
-- autônomos e independentes, contendo um processamento especializado, recursos adicionais e um código personalizado para melhorar ou estender o sistema central.
-- usados para isolar um código altamente volátil, criando uma melhor manutenção e testabilidade na aplicação.
-- componentes de plug-in sejam independentes entre si e não tenham dependências entre eles.
+- Autônomos e independentes, contendo um processamento especializado, recursos adicionais e um código personalizado para melhorar ou estender o sistema central.
+- Usados para isolar um código altamente volátil, criando uma melhor manutenção e testabilidade na aplicação.
+- Componentes de plug-in sejam independentes entre si e não tenham dependências entre eles.
 
 Beneficios:
 - Bordagem do acesso remoto para acessar os componentes de plug-in implementados como serviços individuais são que ele fornece um melhor desacoplamento geral do componente.
@@ -482,3 +482,6 @@ Classificações das Características da Arquitetura:
 
 ## Aula: 13/11- Código Dapr- microserviço
 - Código- Código escrito de maneira distribuido.
+
+## Aula: 17/11- Continuação do Código Dapr- microserviço
+- Código- Terminamos o Código de microserviços usando o Dapr. 
