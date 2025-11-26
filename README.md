@@ -401,28 +401,81 @@ Componentes de Plug-in:
 - componentes de plug-in sejam independentes entre si e não tenham dependências entre eles.
 
 Beneficios:
-- bordagem do acesso remoto para acessar os componentes de plug-in implementados como serviços individuais são que ele fornece um melhor desacoplamento geral do componente.
-- melhor escalabilidade e taxa de transferência.
+- Bordagem do acesso remoto para acessar os componentes de plug-in implementados como serviços individuais são que ele fornece um melhor desacoplamento geral do componente.
+- Melhor escalabilidade e taxa de transferência.
 
 Registro:
-- precisa saber quais módulos de plug-in estão disponíveis e como obtê-los.
+- Precisa saber quais módulos de plug-in estão disponíveis e como obtê-los.
 - Contém informações sobre cada módulo de plug-in, inclusive coisas como nome, contrato dos dados e detalhes do protocolo de acesso remoto.
-- estrutura de mapa interna que o sistema central possui, contendo uma chave e a referência do componente de plug-in, ou pode ser tão complexo quanto uma ferramenta de registro e descoberta incorporada no sistema central ou implantada externamente.
+- Estrutura de mapa interna que o sistema central possui, contendo uma chave e a referência do componente de plug-in, ou pode ser tão complexo quanto uma ferramenta de registro e descoberta incorporada no sistema central ou implantada externamente.
 
 Contratos:
-- padrão em um domínio dos componentes de plug-in e incluem o comportamento e os dados de entrada e saída retornados do componente de plug-in.
-- encontrados nas situações em que os componentes de plug-in são desenvolvidos por terceiros, em que você não tem nenhum controle sobre o contrato usado pelo plug-in.
+- Padrão em um domínio dos componentes de plug-in e incluem o comportamento e os dados de entrada e saída retornados do componente de plug-in.
+- Encontrados nas situações em que os componentes de plug-in são desenvolvidos por terceiros, em que você não tem nenhum controle sobre o contrato usado pelo plug-in.
 
 Exemplos e Casos de Uso
 - IDE Eclipse PMD, Jira e Jenkins,
-- navegadores da internet
+- Navegadores da internet
 
 Classificações das Características da Arquitetura:
-- simplicidade e custo geral são os principais pontos fortes do estilo de arquitetura microkernel.
-- escalabilidade, tolerância a falhas e elasticidade são os principais pontos fracos.
-- estilo de arquitetura microkernel é único, no sentido de que pode ser particionado por domínio e tecnicamente.
+- Simplicidade e custo geral são os principais pontos fortes do estilo de arquitetura microkernel.
+- Escalabilidade, tolerância a falhas e elasticidade são os principais pontos fracos.
+- Estilo de arquitetura microkernel é único, no sentido de que pode ser particionado por domínio e tecnicamente.
 - Performance sempre é uma característica interessante de classificar com o estilo de arquitetura microkernel.
 
 ## Aula: 06/11- Código microkernel
 - Código- Código microkernel
 
+## Aula livro engenharia: Cap 17- 10/11- Arquitetura de Microsserviços
+
+O que é:
+- O conceito do contexto delimitado representa um estilo de desacoplamento.
+- O principal objetivo dos microsserviços é o alto desacoplamento, modelando fisicamente a noção lógica do contexto delimitado.
+
+Topologia:
+- O tamanho do serviço nos microsserviços é muito menor que em outras arquiteturas distribuídas, como a arquitetura orientada a serviços e baseada em orquestração.
+- Os arquitetos esperam que cada serviço inclua todas as partes necessárias para operar de modo independente
+
+Distribuída:
+- Cada serviço roda em seu próprio processo, que originalmente implicava um computador físico, mas rapidamente evoluiu para máquinas virtuais e contêineres.
+- Desacoplar os serviços nesse grau permite uma solução simples para um problema comum nas arquiteturas com muita infraestrutura multilocatária para hospedar as aplicações.
+- Separar cada serviço em seu próprio processo resolve todos os problemas trazidos pelo compartilhamento.
+
+Contexto Delimitado:
+- Cada serviço modela um domínio ou um fluxo de trabalho.
+- Cada serviço deve representar um domínio ou um subdomínio.
+
+Granularidade:
+- Tornar seus serviços pequenos demaiS.
+
+Finalidade:
+- O limite mais óbvio conta com a inspiração para o estilo de arquitetura, um domínio. O ideal é que cada microsserviço seja extremamente coeso de modo funcional, contribuindo com um comportamento importante em nome do aplicação em geral.
+
+Transações:
+- Os contextos delimitados são fluxos de trabalho corporativos e, muitas vezes, as entidades que precisam cooperar em uma transação mostram aos arquitetos um bom limite de serviço. Como as transações causam problemas nas arquiteturas distribuídas, se os arquitetos conseguem projetar seu sistema para evitá-las, eles geram designs de projeto melhores.
+
+Coreografia:
+- Se um arquiteto cria um conjunto de serviços que oferece um excelente isolamento do domínio, mas requer uma grande comunicação para funcionar, o arquiteto pode considerar reagrupar esses serviços em um serviço maior para evitar o sobrecarga (overhead) de comunicação.
+
+Isolamento dos Dados:
+- Evitar o acoplamento, inclusive os esquemas e os bancos de dados compartilhados usados como pontos de integração.
+
+Camada da API:
+- Imagens dos microsserviços inclui uma camada da API entre os consumidores do sistema.
+
+Reutilização Operacional:
+- As preocupações operacionais comuns aparecem em cada serviço como um componente separado, que pode ser de propriedade de equipes individuais ou de uma equipe de infraestrutura compartilhada.
+- Os componentes sidecar comuns se conectam para formar uma interface operacional consistente em todos os microsserviços.
+
+Front-ends:
+- O front-end monolítico apresenta uma IU que faz chamadas atráves da camada da API para atender as requisições do usuário. O front-end pode ser um aplicação avançado para desktop, celular ou web.
+
+Transações e Sagas:
+- 	Não faça transações nos microsserviços; pelo contrário, corrija a granularidade!
+-   Por vezes, são necessárias algumas transações nos serviços; se for o recurso dominante da arquitetura, foram cometidos erros!
+
+Classificações das Características da Arquitetura:
+- Tolerância a falhas e a confiabilidade são impactadas quando é usada muita comunicação entre os serviços.
+- Os pontos altos dessa arquitetura são escalabilidade, elasticidade e ser evolutiva.
+- Performance é outro motivo para os microsserviços sempre usarem a coreografia, não a orquestração, pois um menor acoplamento permite uma comunicação mais rápida e menos gargalos.
+- Arquitetura de microsserviços é uma arquitetura centrada no domínio, em que cada limite do serviço deve corresponder aos domínios. 
