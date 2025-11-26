@@ -381,3 +381,45 @@ Node-RED
 
 ## Aula: 30/10- Código Kafka
 - Código- Kafka um paint no Azure
+
+## Aula livro engenharia: Cap 12- 03/11- Estilo de Arquitetura Microkernel
+
+O que é:
+- estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica.
+
+Topologia:
+- estrutura monolítica relativamente simples consistindo em dois componentes da arquitetura: um sistema central e componentes de plug-in.
+- A lógica do aplicativo é dividida entre componentes de plug-in independentes e o sistema central básico, fornecendo extensão, adaptação e isolamento dos recursos da aplicação e lógica de processamento personalizada.
+
+Sistema Central:
+- funcionalidade mínima requerida para rodar o sistema.
+- aplicação monolítica inteiro compartilhe um único banco de dados.
+
+Componentes de Plug-in:
+- autônomos e independentes, contendo um processamento especializado, recursos adicionais e um código personalizado para melhorar ou estender o sistema central.
+- usados para isolar um código altamente volátil, criando uma melhor manutenção e testabilidade na aplicação.
+- componentes de plug-in sejam independentes entre si e não tenham dependências entre eles.
+
+Beneficios:
+- bordagem do acesso remoto para acessar os componentes de plug-in implementados como serviços individuais são que ele fornece um melhor desacoplamento geral do componente.
+- melhor escalabilidade e taxa de transferência.
+
+Registro:
+- precisa saber quais módulos de plug-in estão disponíveis e como obtê-los.
+- Contém informações sobre cada módulo de plug-in, inclusive coisas como nome, contrato dos dados e detalhes do protocolo de acesso remoto.
+- estrutura de mapa interna que o sistema central possui, contendo uma chave e a referência do componente de plug-in, ou pode ser tão complexo quanto uma ferramenta de registro e descoberta incorporada no sistema central ou implantada externamente.
+
+Contratos:
+- padrão em um domínio dos componentes de plug-in e incluem o comportamento e os dados de entrada e saída retornados do componente de plug-in.
+- encontrados nas situações em que os componentes de plug-in são desenvolvidos por terceiros, em que você não tem nenhum controle sobre o contrato usado pelo plug-in.
+
+Exemplos e Casos de Uso
+- IDE Eclipse PMD, Jira e Jenkins,
+- navegadores da internet
+
+Classificações das Características da Arquitetura:
+- simplicidade e custo geral são os principais pontos fortes do estilo de arquitetura microkernel.
+- escalabilidade, tolerância a falhas e elasticidade são os principais pontos fracos.
+- estilo de arquitetura microkernel é único, no sentido de que pode ser particionado por domínio e tecnicamente.
+- Performance sempre é uma característica interessante de classificar com o estilo de arquitetura microkernel.
+- 
