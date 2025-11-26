@@ -422,4 +422,7 @@ Classificações das Características da Arquitetura:
 - escalabilidade, tolerância a falhas e elasticidade são os principais pontos fracos.
 - estilo de arquitetura microkernel é único, no sentido de que pode ser particionado por domínio e tecnicamente.
 - Performance sempre é uma característica interessante de classificar com o estilo de arquitetura microkernel.
-- 
+
+## Aula: 06/11- Código microkernel
+- Código- Código microkernel
+
