@@ -478,4 +478,7 @@ Classificações das Características da Arquitetura:
 - Tolerância a falhas e a confiabilidade são impactadas quando é usada muita comunicação entre os serviços.
 - Os pontos altos dessa arquitetura são escalabilidade, elasticidade e ser evolutiva.
 - Performance é outro motivo para os microsserviços sempre usarem a coreografia, não a orquestração, pois um menor acoplamento permite uma comunicação mais rápida e menos gargalos.
-- Arquitetura de microsserviços é uma arquitetura centrada no domínio, em que cada limite do serviço deve corresponder aos domínios. 
+- Arquitetura de microsserviços é uma arquitetura centrada no domínio, em que cada limite do serviço deve corresponder aos domínios.
+
+## Aula: 13/11- Código Dapr- microserviço
+- Código- Código escrito de maneira distribuido.
